@@ -1,0 +1,391 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --title-color: #3A3A3A;
+    --text-color: #787885;
+}
+
+/* header styles */
+
+/* nav bar styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo_title {
+    color: #E02C6D;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.menus ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+.menus li a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600px;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+.menus li a:hover{
+    color: #E02C6D;
+}
+
+/* banner sections */
+
+.banner {
+    width: 90%;
+    margin: 80px auto;
+
+}
+
+.banner_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner_contant {
+    padding-left: 90px;
+    padding-right: 100px;
+}
+
+.banner_title {
+    color: var(--title-color);
+    font-size: 3rem;
+    font-weight: 700;
+    /* line-height: 70px; */
+}
+
+.banner_description {
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.bttn {
+    padding: 15px 20px;
+    border-radius: 30px;
+    background: #E02C6D;
+    color: white;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    transition: transform .3s;
+
+}
+.bttn:hover{
+    transform: scale(1.1);
+}
+
+.banner_img {
+    background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+
+}
+
+
+/* sponsor sections */
+.sponsor {
+    display: flex;
+    justify-content: space-evenly;
+    background: #FFF;
+    width: 90%;
+    margin: 100px auto;
+    border: 1px solid rgba(211, 211, 211, 0.27);
+    padding: 10px;
+}
+
+/* collection section */
+
+
+
+/* sponsor section */
+.c_title {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box {
+    max-width: 300px;
+    /* height: 400px; */
+    padding: 10px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    transition: transform .3s;
+
+}
+.box:hover{
+    transform: scale(1.1);
+}
+
+.box_title {
+    color: var(--title-color);
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.price {
+    color: #787885;
+    font-weight: 700;
+    line-height: 143%;
+    font-size: .9rem;
+    letter-spacing: 0.252px;
+}
+
+.ster img {
+    width: 12px;
+}
+
+.collection_boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 85%;
+    margin: auto;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+/*setup container */
+.setup_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: 100px auto;
+}
+.s_img{
+   
+}
+.s_img img:hover{
+    transform: scale(1.1);
+    transition:.3s;
+}
+
+.setup_contant {
+    width: 45%;
+}
+
+.s_title {
+    color: #0A0826;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.banner_description {
+    padding-right: 30px;
+}
+
+#bton {
+    padding: 15px 20px;
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+#bton:hover{
+    transform: scale(1.1);
+}
+/* footer section */
+footer {
+    background-color: black;
+}
+
+.footer_container {
+    width: 30%;
+    margin: 100px auto;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+
+}
+
+.footer_title {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+.copy {
+    color: #D9DBE1;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.icons {
+    font-size: 2rem;
+    padding-bottom: 200px;
+    cursor: pointer;
+}
+
+
+/* responsive design */
+
+/* for mobile device */
+@media screen and (max-width:576px) {
+
+    nav,
+    .menus ul,
+    .banner_container {
+        flex-direction: column;
+    }
+    
+
+    .banner_container,
+    .setup_container {
+        flex-direction: column-reverse;
+    }
+
+    .banner_contant {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 70px;
+    }
+
+    .banner_img img {
+        width: 95%;
+    }
+
+    .banner_title {
+        font-size: 2rem;
+    }
+
+    .sponsor img {
+        display: inline-block;
+        margin-left: 25px;
+    }
+
+    .sponsor {
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .collection_boxes {
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+
+    .box {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .setup_contant {
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .banner_description {
+        padding: 10px;
+    }
+
+    .s_img img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* for tablet device */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .banner_container {
+        flex-direction: column;
+    }
+
+    .banner_contant {
+        padding-left: 70px;
+        padding-right: 70px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .sponsor img {
+        display: inline-block;
+        margin-left: 25px;
+    }
+
+    .sponsor {
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 70px;
+
+    }
+
+    .setup_container {
+        flex-direction: column-reverse;
+    }
+
+    .setup_contant {
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+    }
+
+}
